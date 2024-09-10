@@ -5,10 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raja Sori CPSC332</title>
 </head>
+<style>
+    p {
+        color: lightgoldenrodyellow;
+    }
+
+    body {
+      background-color: lightblue;
+    }
+    
+</style>
 <body>
     <h1>Homework 1</h1>
-    <p>I hope to learn how to make <strong>functional</strong>webpages. I would also
+    <p>I hope to learn how to make <strong>functional</strong> webpages. I would also
         like to learn how to edit and add <em>aestetic</em> elements to webpages.
     </p>
+    <script>
+        // List of colors to cycle through
+        const colors = ["lightgreen", "lightblue", "lightcoral", "lightpink", "lightyellow"];
+    
+        function changeBackgroundColor() {
+          // Generate a random index to pick a color from the array
+          const randomColor = colors[Math.floor(Math.random() * colors.length)];
+          document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+    <img src="summer-come-back.jpg" alt="Glad to be Back" width="580" height="370">
+    <br>
+    <a href="https://www.activekids.com/parenting-and-family/articles/14-hilarious-memes-that-perfectly-describe-back-to-school-time">Click here for image website</a>
+    <br>
+    <button onclick="changeBackgroundColor()">Change Background Color</button>
 </body>
 </html>
